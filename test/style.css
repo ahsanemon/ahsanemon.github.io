@@ -1,0 +1,23 @@
+/*.input-color-container {
+  position: relative;
+  overflow: hidden;
+  width: 14em;
+  height: 12em;
+  border: solid 0.1em #ddd;
+  border-radius: 40px;
+}
+*/
+/*.input-color {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: 56px;
+  height: 56px;
+  border: solid;
+}
+
+.input-color-label {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #3498db;
+}*/
