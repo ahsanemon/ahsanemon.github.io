@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Chat</title>
+	<title>🐦 Chat</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="chat.css">
 	<script type="text/javascript" src="chat.js"></script>
@@ -10,8 +10,9 @@
 	<div class="chat-wrapper">
 		
 		<div class="actions-bar">
-			<button class="button">Clear chat ✂</button>
-			<button onclick="toggleTimestamp()" class="button">Toggle timestamp ⏰</button>
+			<button data-action="clearLog">Clear chat ✂</button>
+			<!-- <button onclick="toggleTimestamp()" class="button">Toggle timestamp ⏰</button> -->
+			<button data-action="toggleTimestamps">Toggle timestamp ⏰</button>
 		</div>
 		
 		<div class="chat-log">

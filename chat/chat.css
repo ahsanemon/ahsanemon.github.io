@@ -93,8 +93,13 @@ body {
 .chat-log .message .timestamp {
 	color: #999;
 	margin-right: 1em;
-	float:left;
+	/*float:left;*/
 	/*display: inline-block;*/
+
+}
+
+.chat-log.no-timestamps .message .timestamp {
+	display: none;
 
 }
 
