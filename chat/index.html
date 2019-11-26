@@ -4,13 +4,14 @@
 	<title>Chat</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="chat.css">
+	<script type="text/javascript" src="chat.js"></script>
 </head>
 <body>
 	<div class="chat-wrapper">
 		
 		<div class="actions-bar">
 			<button class="button">Clear chat ✂</button>
-			<button class="button">Toggle timestamp ⏰</button>
+			<button onclick="toggleTimestamp()" class="button">Toggle timestamp ⏰</button>
 		</div>
 		
 		<div class="chat-log">
@@ -29,25 +30,22 @@
 				<span class="author-name">Boby</span> <span class="verb">:</span>
 				<span class="content">in the hood</span>
 			</p>
-			<p class="message">
-				<span class="timestamp">2019-11-13 17:15:00</span>
-				<span class="author-name">Boby</span> <span class="verb">:</span>
-				<span class="content">what's good</span>
-			</p>
-			<p class="message">
-				<span class="timestamp">2019-11-13 17:15:00</span>
-				<span class="author-name">Boby</span> <span class="verb">:</span>
-				<span class="content">in the hood</span>
-			</p>
 		</div>
 
-		<form class="input-bar">
+		<form id="message-form" class="input-bar">
 			<div>
 				<input class="color-input" type="color" name="color">
+<!-- 				<div class="input-color-container">
+    				<input id="input-color" value="#ed6868" class="input-color" type="color">
+  				</div>
+  
+  				<label class="input-color-label" for="input-color">
+  					Select color
+  				</label> -->
 			</div>
 			<input type="text" name="username" placeholder="Username" autofocus>
 			<input type="text" name="message" placeholder="Start writting&hellip;">
-			<button type="submit" disabled>Send ✈</button>
+			<button type="submit">Send ✈</button>
 		</form>
 
 	</div>

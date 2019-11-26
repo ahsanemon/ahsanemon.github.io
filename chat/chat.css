@@ -20,53 +20,82 @@ body {
 }
 
 .actions-bar .button {
-	/*background-color: #4CAF50; */
-  	/*border: none;
-  	color: white;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 16px;
-  	margin: 4px 2px;
-  	padding: 1em;
-  	cursor: pointer;*/
-  	/*border-radius: 10px;*/
   	float: right;
   	margin: .21em;
 }
 
 .input-bar {
 	display: grid;
-	grid-template-columns: min-content min-content auto max-content;
+	grid-template-columns: max-content min-content auto max-content;
 	grid-column-gap: .5em;
 	padding: 1em;
 }
+
+/*.input-bar * {
+	margin: 0.2em 0.2em 0.2em 0.2em;
+}*/
 
 .input-bar .color-input {
 	width: 9em;
 	height: 2.1em;
 }
 
+.input-color-container {
+  position: relative;
+  overflow: hidden;
+  width: 4em;
+  height: 2em;
+  border: solid 0.01em #ddd;
+  border-radius: 80%;
+}
+
+.input-color {
+  	position: absolute;
+  	right: -100px;
+  	top: -10px;
+  	width: 156em;
+  	height: 156em;
+  	border: solid;
+}
+
+.input-color-label {
+	position: right;
+  	cursor: pointer;
+  	text-decoration: underline;
+  	color: #3498db;
+}
+
+
+.input-bar input {
+
+}
 
 .chat-log {
 	background-color: white;
 	border: 1pt solid: #ccc;
-	overflow-y: scroll; 
+	overflow-y: scroll;
+	/*display: inline-block;*/
+	/*white-space:nowrap;*/
 }
 
 .chat-log .message {
 	margin: 0;
 	padding: 0.4em;
+	color: green;
 
 }
 
 .chat-log .message:nth-child(2n) {
 	background-color: rgba(0,0,0,0.05);
+
 } 	
 
 .chat-log .message .timestamp {
 	color: #999;
 	margin-right: 1em;
+	float:left;
+	/*display: inline-block;*/
+
 }
 
 .chat-log .message .author-name {
@@ -82,4 +111,6 @@ body {
 
 .chat-log .message .content {
 	font-family: serif;
+	display: inline;
+
 }
